@@ -199,7 +199,7 @@ function debug($url , $res , $file){
         exit("curl 请求：{$url} 错误");
     }
 
-    $file = __DIR__ . "/{$file}.html";
+    $file = __DIR__ . "/template/{$file}.html";
     if (file_exists($file)) {
         unlink($file);
     }
