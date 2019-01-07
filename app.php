@@ -97,7 +97,8 @@ $run = function($min_page , $max_page , $all = true) use($addr , $url_for_page)
                 continue ;
             }
             $image = $matches[1];
-            echo "{$name[$k]} 内含图片 " . count($image) . " 张...";
+//            echo "{$name[$k]} 内含图片 " . count($image) . " 张...";
+            echo mb_substr(md5($name[$k]) , 0 , 10) . " 内含图片 " . count($image) . " 张...";
             foreach ($image as $k1 => $v1)
             {
                 $file = $dir . get_filename($v1);
