@@ -8,7 +8,7 @@
 # 运行
 
 - 建库（默认名称：`love100girl`）
-- 建表（使用 `lovegirl100.sql`）
+- 建表（使用 `love100girl.sql`）
 - 运行
 
 ```
